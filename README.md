@@ -24,12 +24,15 @@ cd ..
 
 # make sure you have foreman/lineman
 #   both installed globally
-# you'll also need postgres
 foreman start
-rails s
+
+# setup database
+rake db:create:all
+rake db:migrate
 
 # api runs on localhost:3000
 # client runs on localhost:8000
+rails s
 
 ```
 
@@ -37,4 +40,3 @@ rails s
 
 1. Ensure the Rails App and Lineman App are running
 1. `rake test`
-
