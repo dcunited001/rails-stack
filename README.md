@@ -33,6 +33,7 @@ cd ..
 
 # make sure you have foreman/lineman
 #   both installed globally
+cp Procfile.dev Procfile
 foreman start
 
 # setup database
