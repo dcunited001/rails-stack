@@ -17,6 +17,10 @@ need it installed globally.
 # clone project and
 bundle install
 
+# init client submodule
+git submodule init   # init local conf file
+git submodule update # run this to pull in updates in submodules
+
 # install client dependencies
 cd client
 npm install
