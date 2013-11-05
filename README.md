@@ -21,9 +21,14 @@ bundle install
 git submodule init   # init local conf file
 git submodule update # run this to pull in updates in submodules
 
+# install global npm bin's, if necessary
+npm install -g foreman
+npm install -g bower
+
 # install client dependencies
 cd client
 npm install
+bower install
 cd ..
 
 # make sure you have foreman/lineman
