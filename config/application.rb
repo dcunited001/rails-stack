@@ -21,7 +21,7 @@ module Railsapp
     # config.i18n.default_locale = :de
 
     config.to_prepare do
-      DeviseController.respond_to :html, :json
+      DeviseController.respond_to :json
     end
 
   end
