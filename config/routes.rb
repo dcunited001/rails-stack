@@ -8,7 +8,7 @@ Railsapp::Application.routes.draw do
       get 'current_user' => 'sessions#show_current_user', :as => 'show_current_user'
     end
 
-    resources :users
+    resources :users, only: [:index, :show]
     root to: "home#index"
 
     # The priority is based upon order of creation: first created -> highest priority.
