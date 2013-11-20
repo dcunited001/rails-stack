@@ -4,7 +4,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 gem 'doorkeeper', '~> 0.7.0'
 gem 'devise', '~> 3.2.0'
-gem 'pg'
+gem 'pg', '~> 0.17.0'
+
+gem 'resque', "~> 2.0.0.pre.1", github: "resque/resque"
+gem 'resque_mailer', '~> 2.2.6'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
