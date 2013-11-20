@@ -8,6 +8,7 @@ gem 'pg', '~> 0.17.0'
 
 gem 'resque', "~> 2.0.0.pre.1", github: "resque/resque"
 gem 'resque_mailer', '~> 2.2.6'
+gem 'devise-async', '~>  0.9.0'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
