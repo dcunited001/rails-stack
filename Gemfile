@@ -10,6 +10,15 @@ gem 'resque', "~> 2.0.0.pre.1", github: "resque/resque"
 gem 'resque_mailer', '~> 2.2.6'
 gem 'devise-async', '~>  0.9.0'
 
+group :development, :test do
+  gem 'pry', '~> 0.9'  
+end
+
+group :test do
+  gem 'minitest', '~> 4.7'
+  gem 'minitest-rails', '~> 0.9.2'
+end
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
