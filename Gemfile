@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', github: 'rails/rails'
+gem 'arel', github: 'rails/arel'
 gem 'doorkeeper', '~> 0.7.0'
 gem 'devise', '~> 3.2.0'
 gem 'pg', '~> 0.17.0'
