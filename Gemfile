@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', github: 'rails/rails'
-gem 'arel', github: 'rails/arel'
+gem 'rails', '~> 4.0.0'
 gem 'doorkeeper', '~> 0.7.0'
 gem 'devise', '~> 3.2.0'
 gem 'pg', '~> 0.17.0'
@@ -16,23 +15,15 @@ group :development, :test do
 end
 
 group :test do
-  gem 'minitest', '~> 4.7'
-  gem 'minitest-rails', '~> 0.9.2'
+  gem 'minitest', '4.7.5'
+  gem 'minitest-focus'
+  gem 'minitest-spec-rails'
+
+  # it'd be cool if i could use my websocket minitest reporter!
+  # gem 'minitest-reporters', '~> 1.0.0.beta3'
 end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
