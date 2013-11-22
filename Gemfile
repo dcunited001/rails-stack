@@ -15,9 +15,10 @@ group :development, :test do
 end
 
 group :test do
-  gem 'minitest', '4.7.5'
+  gem 'minitest', '~> 4.7.5'
   gem 'minitest-focus'
   gem 'minitest-spec-rails'
+  gem 'poltergeist'
 
   # it'd be cool if i could use my websocket minitest reporter!
   # gem 'minitest-reporters', '~> 1.0.0.beta3'
