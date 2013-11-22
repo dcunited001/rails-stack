@@ -155,7 +155,7 @@ DEPENDENCIES
   minitest-focus
   minitest-spec-rails
   pg (~> 0.17.0)
-  poltergeist
+  poltergeist (~> 1.4.1)
   pry (~> 0.9)
   rails (~> 4.0.0)
   resque (~> 2.0.0.pre.1)!
