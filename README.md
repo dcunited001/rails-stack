@@ -15,7 +15,7 @@ need it installed globally.
 
 ```bash
 # clone project and
-bundle install
+bundle install --binstubs
 
 # init client submodule
 git submodule init   # init local conf file
