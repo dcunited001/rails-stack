@@ -23,7 +23,8 @@ module Railsapp
     config.to_prepare do
       DeviseController.respond_to :json
     end
-    
+
+    # for minitest-rails generators
     config.generators do |g|
       g.test_framework :mini_test, spec: true, fixture: false
     end
