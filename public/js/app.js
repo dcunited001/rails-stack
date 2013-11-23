@@ -1,0 +1,1 @@
+../../client/generated/js/app.js
