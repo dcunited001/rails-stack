@@ -10,7 +10,7 @@ development:
   encoding: unicode
   username: dc
   password: 
-  
+
 production:
   adapter: postgresql
   database: railsapp_production
@@ -18,7 +18,7 @@ production:
   encoding: unicode
   username: dc
   password: 
-  
+
 test:
   adapter: postgresql
   database: railsapp_test
@@ -26,4 +26,11 @@ test:
   encoding: unicode
   username: dc
   password: 
-  
+
+integration:
+  adapter: postgresql
+  database: railsapp_integration
+  pool: 5
+  encoding: unicode
+  username: dc
+  password: 
