@@ -5,8 +5,6 @@ require 'capybara/poltergeist'
 Capybara.configure do |c|
   c.default_driver = :poltergeist
   c.javascript_driver = :poltergeist
-  c.app_host = "http://127.0.0.1:8000"
-  c.run_server = false
 end
 
 module ActionDispatch
