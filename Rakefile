@@ -5,10 +5,18 @@ require File.expand_path('../config/application', __FILE__)
 
 Railsapp::Application.load_tasks
 
+# unit tests
 Rake::TestTask.new do |t|
   t.libs << "spec"
-  t.test_files = FileList['spec/**/*_spec.rb']
+  t.test_files = FileList['spec/models/**/*_spec.rb',
+                          'spec/controllers/**/*_spec.rb']
   t.verbose = true
+end
+
+# integration tests
+Rake::TestTask.new(:spec) do |t|
+  t.libs << "spec"
+  t.test_files = FileList['spec/integration/**/*_spec.rb']
 end
 
 task :default => :test
