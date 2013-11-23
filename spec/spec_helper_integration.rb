@@ -1,3 +1,8 @@
+# TODO: set up integration environment
+#   - problems with ActionDispatch::IntegrationTest
+#   - before filter undefined
+ENV["RAILS_ENV"] ||= "test"
+
 require 'spec_helper'
 require 'capybara/rails'
 require 'capybara/poltergeist'
