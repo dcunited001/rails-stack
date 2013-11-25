@@ -17,6 +17,7 @@ end
 Rake::TestTask.new(:spec) do |t|
   t.libs << "spec"
   t.test_files = FileList['spec/integration/**/*_spec.rb']
+  t.verbose = true
 end
 
 task :default => :test
