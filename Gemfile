@@ -19,6 +19,7 @@ group :test do
   gem 'minitest-focus'
   gem 'minitest-spec-rails'
   gem 'poltergeist', '~> 1.4.1'
+  gem 'database_cleaner', '~> 1.2.0'
 
   # it'd be cool if i could use my websocket minitest reporter!
   # gem 'minitest-reporters', '~> 1.0.0.beta3'
