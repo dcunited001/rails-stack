@@ -12,6 +12,9 @@ Capybara.configure do |c|
   c.javascript_driver = :poltergeist
 end
 
+DatabaseCleaner.strategy = :truncation
+DatabaseCleaner.clean
+
 module ActionDispatch
   class IntegrationTest
     
