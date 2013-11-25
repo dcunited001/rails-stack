@@ -5,9 +5,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable, 
          :async # mail sent through resque
 
-  validates_uniqueness_of :username
-  validates_presence_of :username
-  validates :username, length: { in: 4..20 }
+  validates :username, length: { in: 4..20 }, uniqueness: true, presence: true
+  validates :email, format: /@/, uniqueness: true, presence:true
 
   #TODO: login with email or username
   #TODO: add remember_me
