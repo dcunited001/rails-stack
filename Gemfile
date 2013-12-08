@@ -18,6 +18,7 @@ group :test do
   gem 'minitest', '~> 4.7.5'
   gem 'minitest-focus'
   gem 'minitest-spec-rails'
+  gem 'minitest-metadata', '~> 0.4.0'
   gem 'poltergeist', '~> 1.4.1'
   gem 'database_cleaner', '~> 1.2.0'
 
@@ -29,3 +30,9 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+group :production do
+  gem 'rails_12factor'
+end
+
+ruby "2.0.0"
