@@ -1,5 +1,5 @@
 Railsapp::Application.routes.draw do
-  scope :api do
+  scope :api, constraints: { format: :json } do
 
     devise_for :users
     devise_scope :user do
