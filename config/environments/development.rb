@@ -1,4 +1,15 @@
 Railsapp::Application.configure do
+
+  # allow all origins in development
+  config.middleware.use Rack::Cors do
+    allow do
+      origins '*'
+      resource '*', 
+          :headers => :any, 
+          :methods => [:get, :post, :delete, :put, :options]
+    end
+  end
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
