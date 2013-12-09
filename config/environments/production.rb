@@ -1,16 +1,5 @@
 Railsapp::Application.configure do
 
-  # allow all origins in development
-  # TODO: secure
-  config.middleware.use Rack::Cors do
-    allow do
-      origins '*'
-      resource '*', 
-          :headers => :any, 
-          :methods => [:get, :post, :delete, :put, :options]
-    end
-  end
-
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
