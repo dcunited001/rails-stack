@@ -1,3 +1,8 @@
+puts '*'*80
+puts Rails.env
+puts '*'*80
+Bundler.require(:production)
+
 Railsapp::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
