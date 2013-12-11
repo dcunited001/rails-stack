@@ -1,4 +1,5 @@
 Railsapp::Application.configure do
+  config.ng_client_url = "http://127.0.0.1:8000"
 
   # Settings specified here will take precedence over those in config/application.rb.
 
