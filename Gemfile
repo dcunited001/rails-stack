@@ -8,7 +8,7 @@ gem 'pg', '~> 0.17.0'
 gem 'doorkeeper', '~> 0.7.0'
 gem 'jquery-rails' # for doorkeeper (asset:precompile)
 
-gem 'resque', "~> 2.0.0.pre.1", github: "resque/resque"
+gem 'resque', "~> 1.25.1"
 gem 'resque_mailer', '~> 2.2.6'
 gem 'devise-async', '~>  0.9.0'
 gem 'rack-cors', '~> 0.2.9', require: 'rack/cors'
