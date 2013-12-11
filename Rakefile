@@ -5,6 +5,9 @@ require File.expand_path('../config/application', __FILE__)
 
 Railsapp::Application.load_tasks
 
+# resque
+require 'resque/tasks'
+
 # unit tests
 Rake::TestTask.new do |t|
   t.libs << "spec"
