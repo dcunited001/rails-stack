@@ -1,4 +1,10 @@
+require 'resque/server'
+
 Railsapp::Application.routes.draw do
+
+  # TODO: secure resque/server
+  mount Resque::Server.new, :at => "/resque"
+
   scope :api, constraints: { format: :json } do
 
     devise_for :users
