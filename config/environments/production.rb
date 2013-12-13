@@ -1,7 +1,4 @@
 Railsapp::Application.configure do
-  #TODO: set ng production url
-  config.ng_client_url = ""
-
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.

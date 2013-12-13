@@ -1,10 +1,5 @@
 # Redis
-redis_url = case Rails.env
-  when 'production' then ENV["REDISCLOUD_URL"]
-  when 'staging' then ENV["REDISTOGO_URL"]
-  when 'development' then 'redis://localhost:6379'
-  when 'test' then 'redis://localhost:6379'
-end
+redis_url = ENV['REDIS_URL'] || 'redis://localhost:6379'
 
 redis_uri = URI.parse(redis_url)
 Resque.redis = Redis.new(:host => redis_uri.host, 

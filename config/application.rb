@@ -29,5 +29,7 @@ module Railsapp
       g.test_framework :mini_test, spec: true, fixture: false
     end
 
+    config.ng_client_url = ENV['NG_RAILS_STACK_CLIENT_URL'] || 'http://localhost:8000'
+
   end
 end
