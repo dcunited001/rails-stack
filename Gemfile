@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '~> 4.0.0'
 gem 'devise', '~> 3.2.0'
 gem 'pg', '~> 0.17.0'
+gem 'rake', '~> 10.3.2'
 
 gem 'doorkeeper', '~> 0.7.0'
 gem 'jquery-rails' # for doorkeeper (asset:precompile)

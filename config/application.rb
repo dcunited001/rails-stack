@@ -29,6 +29,8 @@ module Railsapp
       g.test_framework :mini_test, spec: true, fixture: false
     end
 
+    config.rails_lineman.lineman_project_location = "my/app"
+
     #==================
     # Configure for Rack::CORS (and add config.ru)
     #==================
