@@ -16,8 +16,5 @@ Railsapp::Application.routes.draw do
 
     resources :users, only: [:index, :show]
   end
-
-  # TODO: module to pass along original url & params
-  get '/*url', :to => redirect(Railsapp::Application.config.ng_client_url)
-  get '/', :to => redirect(Railsapp::Application.config.ng_client_url)
+  
 end
