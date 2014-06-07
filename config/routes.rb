@@ -18,6 +18,6 @@ Railsapp::Application.routes.draw do
     end
   end
 
+  get '/*url', :to => 'home#index' #TODO: set to set correct app state?
   root to: 'home#index'
-  
 end
