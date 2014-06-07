@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
 <head>
-  <title>Railsapp</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+
+  <title>Appistack</title>
   <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    "lineman/app", media: :all %>
+  <%= javascript_include_tag "lineman/app" %>
+
 </head>
-<body>
+<body ng-cloak>
+<div class="row">
+  <div class="large-12">
+    <h1>A Lineman Angular Setup</h1>
+    <div id="view" ng-view></div>
+  </div>
+</div>
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-  <%= yield %>
-
+<script type="text/javascript" src="/js/app.js"></script>
 </body>
 </html>
