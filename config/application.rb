@@ -29,5 +29,8 @@ module Railsapp
       g.test_framework :mini_test, spec: true, fixture: false
     end
 
+    # lineman config (set LINEMAN_PROJECT_LOCATION in config/secrets.yml)
+    config.rails_lineman.lineman_assets = [:fonts, :css, :js]
+
   end
 end
