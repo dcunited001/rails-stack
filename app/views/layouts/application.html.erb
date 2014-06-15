@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html ng-app="RailsStackApp">
+<html ng-app="app">
 <head>
+  <script type="text/javascript">
+    apiUrl = "<%= "//#{request.host_with_port}" %>";
+  </script>
+
 
   <title>Appistack</title>
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag    "lineman/app", media: :all %>
+  <link rel="icon" type="image/png" href="/img/favicon.ico"/>
 
 </head>
 <body ng-cloak>
