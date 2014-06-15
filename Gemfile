@@ -9,7 +9,7 @@ gem 'doorkeeper', '~> 0.7.0'
 gem 'jquery-rails' # for doorkeeper (asset:precompile)
 # TODO: remove jquery-rails
 
-gem 'resque', "~> 1.25.1"
+gem 'resque', '~> 1.25.1'
 gem 'resque_mailer', '~> 2.2.6'
 gem 'devise-async', '~>  0.9.0'
 
