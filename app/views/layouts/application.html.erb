@@ -6,24 +6,23 @@
   </script>
 
 
-  <title>Appistack</title>
+  <!-- site configuration for title (in one place for both rails and angular) -->
+  <title>ng-rails</title>
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag    "lineman/app", media: :all %>
   <link rel="icon" type="image/png" href="/img/favicon.ico"/>
 
 </head>
 <body ng-cloak>
+<!-- TODO: google analytics -->
 
-  <div class="navbar navbar-inverse navbar-fixed-top" navbar-widget></div>
+  <!-- TODO: make navbar-widget a tag -->
+  <header navbar-widget></header>
 
   <div class="container-fluid">
     <div class="row-fluid">
 
-      <div class="span3" sidebar-widget>
-
-      </div>
-      <!--/span -->
-
+      <!-- TODO: CSS fix for ui-view -->
       <div id="view" class="span9" ui-view></div>
 
     </div>
@@ -31,6 +30,14 @@
     <footer><p>&copy; Company 2013</p></footer>
   </div>
   <!--/.container-fluid -->
+
+
+  <div id="footer">
+    <div class="container-fluid">
+      <!-- TODO: site configuration for author -->
+      <p class="text-muted text-center">&copy; <%= Date.today.year %> David Conner</p>
+    </div>
+  </div>
 
   <%= javascript_include_tag "lineman/app" %>
 </body>
